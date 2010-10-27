@@ -580,7 +580,7 @@ $.validationEngine = {
 		if(typeof(ajaxValidate)=='undefined'){ajaxValidate = false}
 		if(!ajaxValidate){
 			linkTofield = $.validationEngine.linkTofield(caller);
-			closingPrompt = "."+linkTofield;
+			var closingPrompt = "."+linkTofield;
 			$(closingPrompt).fadeTo("fast",0,function(){
 				$(closingPrompt).remove();
 			});
